@@ -6,4 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Services\Abstractions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\Abstractions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeApp.DAL\EmployeeApp.DAL.csproj" />
+    <ProjectReference Include="..\EmployeeApp.Common\EmployeeApp.Common.csproj" />
+  </ItemGroup>
 </Project>
